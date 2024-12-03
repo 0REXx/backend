@@ -1,4 +1,3 @@
-
 const ShoppingList = require('../models/ShoppingList');
 
 const getShoppingLists = async (req, res) => {
