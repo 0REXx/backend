@@ -1,4 +1,3 @@
-
 const express = require('express');
 const router = express.Router();
 const { getShoppingLists, createShoppingList, updateShoppingList, deleteShoppingList } = require('../controllers/shoppingListController');
