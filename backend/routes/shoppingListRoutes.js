@@ -4,6 +4,8 @@ const { getShoppingLists, createShoppingList, updateShoppingList, deleteShopping
 const { protect } = require('../middleware/authMiddleware');
 
 router.route('/').get(protect, getShoppingLists).post(protect, createShoppingList);
-router.route('/:id').put(protect, updateShoppingList).delete(protect, deleteShoppingList);
+router.route('/:id')
+    .put(protect, updateShoppingList)
+    .delete(protect, deleteShoppingList);
 
 module.exports = router;
